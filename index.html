@@ -160,6 +160,7 @@ h1 {
     </div>
 
     <div class="menu-aplicativos" id="menu-aplicativos">
+      <button id="winrar-btn">Win Rar</button>
       <button id="discord-btn">Discord</button>
       <button id="paintnet-btn">Paint.net</button>
       <button id="lightshot-btn">Lightshot</button>
@@ -241,6 +242,12 @@ h1 {
   });
 
   // APPS
+  document.getElementById('winrar-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-701br.exe', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
   document.getElementById('discord-btn').addEventListener('click', function() {
     var downloadWindow = window.open('https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64', '_blank');
     setTimeout(function() {
