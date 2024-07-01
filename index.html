@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #19202c;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  height: 90vh
+}
+
+.menu {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2c3446;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu button:hover {
+  background-color: #3f4c6b;
+}
+
+.content {
+  flex: 1;
+  background-color: #2c3446;
+  border-radius: 5px;
+}
+
+/* MENU NAVEGADOR */
+.menu-navegadores {
+  padding: 20px;
+  display: none; /* adicionado */
+}
+
+.menu-navegadores button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #19202c;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-navegadores button:hover {
+  background-color: #536181;
+}
+
+/* MENU APPS */
+.menu-aplicativos {
+  padding: 20px;
+  display: none; /* adicionado */
+}
+
+.menu-aplicativos button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #19202c;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-aplicativos button:hover {
+  background-color: #536181;
+}
+
+/* MENU launchers */
+.menu-launchers {
+  padding: 20px;
+  display: none; /* adicionado */
+}
+
+.menu-launchers button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #19202c;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-launchers button:hover {
+  background-color: #536181;
+}
+
+/* MENU programacao */
+.menu-programacao {
+  padding: 20px;
+  display: none; /* adicionado */
+}
+
+.menu-programacao button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #19202c;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-programacao button:hover {
+  background-color: #536181;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="menu">
+    <button id="navegadores-btn">Navegadores</button>
+    <button id="aplicativos-btn">Aplicativos</button>
+    <button id="launchers-btn">Launchers</button>
+    <button id="programacao-btn">Programação</button>
+  </div>
+  <div class="content">
+    <h1>Fefo Tools</h1>
+
+    <div class="menu-navegadores" id="menu-navegadores">
+      <button id="firefox-btn">Firefox</button>
+      <button id="google-btn">Google Chrome</button>
+      <button id="brave-btn">Brave</button>
+      <button id="opera-btn">Opera GX</button>
+    </div>
+
+    <div class="menu-aplicativos" id="menu-aplicativos">
+      <button id="discord-btn">Discord</button>
+      <button id="paintnet-btn">Paint.net</button>
+      <button id="lightshot-btn">Lightshot</button>
+      <button id="nvidia-btn">NVIDIA Geforce Experience</button>
+      <button id="lghubwin-btn">Logitech HUB Windows</button>
+      <button id="steamlabs-btn">Stream Labs</button>
+      <button id="obswin-btn">Obs Studio Windows</button>
+    </div>
+
+    <div class="menu-launchers" id="menu-launchers">
+      <button id="steam-btn">Steam</button>
+      <button id="epic-games-btn">Epic Games</button>
+      <button id="battlenet-btn">Battle Net</button>
+      <button id="uplay-btn">Uplay</button>
+      <button id="rockstar-btn">Rockstar Games</button>
+    </div>
+
+    <div class="menu-programacao" id="menu-programacao">
+      <button>Python 3.9</button>
+      <button>Node v18</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  document.getElementById('navegadores-btn').addEventListener('click', function() {
+    document.getElementById('menu-navegadores').style.display = 'block';
+    document.getElementById('menu-aplicativos').style.display = 'none';
+    document.getElementById('menu-launchers').style.display = 'none';
+    document.getElementById('menu-programacao').style.display = 'none';
+  });
+
+  document.getElementById('aplicativos-btn').addEventListener('click', function() {
+    document.getElementById('menu-navegadores').style.display = 'none';
+    document.getElementById('menu-aplicativos').style.display = 'block';
+    document.getElementById('menu-launchers').style.display = 'none';
+    document.getElementById('menu-programacao').style.display = 'none';
+  });
+
+  document.getElementById('launchers-btn').addEventListener('click', function() {
+    document.getElementById('menu-navegadores').style.display = 'none';
+    document.getElementById('menu-aplicativos').style.display = 'none';
+    document.getElementById('menu-launchers').style.display = 'block';
+    document.getElementById('menu-programacao').style.display = 'none';
+  });
+
+  document.getElementById('programacao-btn').addEventListener('click', function() {
+    document.getElementById('menu-navegadores').style.display = 'none';
+    document.getElementById('menu-aplicativos').style.display = 'none';
+    document.getElementById('menu-launchers').style.display = 'none';
+    document.getElementById('menu-programacao').style.display = 'block';
+  });
+
+  // NAVEGADORES
+  document.getElementById('firefox-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://download.mozilla.org/?product=firefox-stub&os=win&lang=pt-BR&attribution_code=c291cmNlPXd3dy5nb29nbGUuY29tJm1lZGl1bT1yZWZlcnJhbCZjYW1wYWlnbj0obm90IHNldCkmY29udGVudD0obm90IHNldCkmZXhwZXJpbWVudD0obm90IHNldCkmdmFyaWF0aW9uPShub3Qgc2V0KSZ1YT1jaHJvbWUmY2xpZW50X2lkPTI1ODYwMTA4LjE3MDIzMTYyMjAmY2xpZW50X2lkX2dhND0yNTg2MDEwOC4xNzAyMzE2MjIwJnNlc3Npb25faWQ9NDc5Mjc0NjgyNiZkbHNvdXJjZT1tb3pvcmc.&attribution_sig=f105e1df6028d05596b2e25b33b8bccdcec783228c1a0680f2a221acd8217bb4&_gl=1*wawqs8*_ga*MjU4NjAxMDguMTcwMjMxNjIyMA..*_ga_MQ7767QQQW*MTcxOTQ2MTg0NC4xLjEuMTcxOTQ2MTg0Ni4wLjAuMA..', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('google-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('brave-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://laptop-updates.brave.com/download/BRV002?bitness=64', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('opera-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://www.opera.com/computer/thanks?ni=stable&os=windows', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+
+  // APPS
+  document.getElementById('discord-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('paintnet-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://github.com/paintdotnet/release/releases/download/v5.0.13/paint.net.5.0.13.install.anycpu.web.zip', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('lightshot-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://app.prntscr.com/build/setup-lightshot.exe', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('nvidia-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://us.download.nvidia.com/GFE/GFEClient/3.28.0.417/GeForce_Experience_v3.28.0.417.exe', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('lghubwin-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('steamlabs-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://streamlabs.com/streamlabs-desktop/download?sdb=0', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('obswin-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://cdn-fastly.obsproject.com/downloads/OBS-Studio-30.1.2-Full-Installer-x64.exe', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+
+  // LAUNCHERS
+  document.getElementById('steam-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('epic-games-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?trackingId=6f04d5f106e44707baf5f84af8dfae63', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('battlenet-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://downloader.battle.net//download/getInstallerForGame?os=win&gameProgram=BATTLENET_APP&version=Live', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('uplay-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://ubi.li/4vxt9', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('rockstar-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://gamedownloads.rockstargames.com/public/installer/Rockstar-Games-Launcher.exe?_gl=1*az6i8g*_gcl_au*NTUzNDM2NjgzLjE3MTczODIyNzg.*_ga*MjA2NDQ3NzYyOS4xNzE3MjA3OTYy*_ga_PJQ2JYZDQC*MTcxOTQ2MTc1NC4yLjAuMTcxOTQ2MTc2Mi4wLjAuMA..https://gamedownloads.rockstargames.com/public/installer/Rockstar-Games-Launcher.exe?_gl=1*az6i8g*_gcl_au*NTUzNDM2NjgzLjE3MTczODIyNzg.*_ga*MjA2NDQ3NzYyOS4xNzE3MjA3OTYy*_ga_PJQ2JYZDQC*MTcxOTQ2MTc1NC4yLjAuMTcxOTQ2MTc2Mi4wLjAuMA..', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+</script>
+
+</body>
+</html>
