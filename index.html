@@ -156,7 +156,8 @@ h1 {
       <button id="firefox-btn">Firefox</button>
       <button id="google-btn">Google Chrome</button>
       <button id="brave-btn">Brave</button>
-      <button id="opera-btn">Opera GX</button>
+      <button id="opera-btn">Opera Normal</button>
+      <button id="operagx-btn">Opera GX</button>
     </div>
 
     <div class="menu-aplicativos" id="menu-aplicativos">
@@ -236,6 +237,12 @@ h1 {
   });
   document.getElementById('opera-btn').addEventListener('click', function() {
     var downloadWindow = window.open('https://www.opera.com/computer/thanks?ni=stable&os=windows', '_blank');
+    setTimeout(function() {
+      downloadWindow.close();
+    }, 2000)
+  });
+  document.getElementById('operagx-btn').addEventListener('click', function() {
+    var downloadWindow = window.open('https://www.opera.com/computer/thanks?ni=eapgx&os=windows&edition=std-1&utm_source=PWNgames&utm_medium=pa&utm_campaign=PWN_BR_UVR_3736&utm_content=3736_&utm_id=09406fdfec144e4d9c3e1a99d3e45dd0', '_blank');
     setTimeout(function() {
       downloadWindow.close();
     }, 2000)
