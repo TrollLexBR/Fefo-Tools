@@ -1,6 +1,7 @@
 # Fefo-Tools
 
 Site pra instalar alguns bangs quando formatar um PC ou notebook.
+Ou use esse aq: https://ninite.com/
 
 Pra agilizar o tempo.
 
